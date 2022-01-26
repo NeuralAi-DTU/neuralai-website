@@ -11,11 +11,11 @@
   } */
 
 .navbar {
-  height: 6rem;
+  height: 5rem;
   /* margin-top: -8px; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   text-transform: uppercase;
   position: -webkit-sticky;
   position: sticky;
@@ -34,17 +34,69 @@
 .nav_links {
   display: flex;
   color: white;
+  font-size: 15px;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 2%;
+  list-style: none;
 }
 
 .nav_menu {
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-left: 2%;
+  margin-right: 2%;
+  list-style: none;
+  /* text-transform: none; */
 }
 
 .nav_menu.act {
+  display: inline-block;
+  position: relative;
+
+  cursor: pointer;
   color: #000;
 }
 
-.nav_menu.act:hover {
-  color: rgb(129, 18, 18);
+.nav_menu.act:after {
+  content: "";
+  position: absolute;
+
+  cursor: pointer;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -13px;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav_menu.act:hover:after {
+  cursor: pointer;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav_links > Button {
+  background: none;
+  border-radius: 0px;
+  border-color: white;
+  width: 8rem;
+  height: 2.7rem;
+  margin-left: 2%;
+  color: white;
+}
+
+.nav_button.act {
+  background: none;
+  border-color: black;
+  color: black;
+}
+
+.nav_links > Button:hover {
+  background-color: black;
+  color: white;
+  border: none;
+  transition: 0.3s ease-in-out;
 }

@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 /material-kit-pro-react-v1
+/src/material-kit-pro-react-v1
+/src/node_modules
 
 # testing
 /coverage
