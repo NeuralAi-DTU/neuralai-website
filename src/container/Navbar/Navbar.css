@@ -1,6 +1,6 @@
-.logo1 {
-  width: 3rem;
-  margin: 10px;
+.logo {
+  width: 11rem;
+  margin-top: -10px;
 }
 
 /* .navbar {
@@ -29,6 +29,7 @@
 
 .navbar.active {
   background-color: white;
+  transition: 0.5s ease-in-out;
 }
 
 .nav_links {

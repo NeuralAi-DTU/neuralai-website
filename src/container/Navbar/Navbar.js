@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Component } from "react";
 import "./Navbar.css";
-import logo from "./logo192.png";
+import logoLight from "./logo variation-03.png";
+import logoDark from "./logo variation-01.png";
 import Button from "../../node_modules/@mui/material/Button/Button";
 
 export default function Navbar() {
@@ -27,7 +28,11 @@ export default function Navbar() {
         if (window.scrollY < 80) setNavbar(false);
       }}
     >
-      <img className="logo1" src={logo}></img>
+      <img
+        className="logo"
+        src={navbar ? logoDark : logoLight}
+        alt="store logo"
+      />
       <div className={navbar ? "nav_links act" : "nav_links"}>
         <li className={navbar ? "nav_menu act" : "nav_menu"}>About</li>
         <li className={navbar ? "nav_menu act" : "nav_menu"}>Projects</li>
