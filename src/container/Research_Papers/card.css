@@ -1,0 +1,30 @@
+.wrapper{
+    display: flex;
+    margin-left: 100px;;
+}
+.card1{
+    margin-top: 100px;
+}
+.card3{
+    margin-top: 150px;
+}
+.card5{
+    margin-top: 200px;
+}
+.head1{
+    display: inline;
+    float: left;
+    color: brown;
+}
+.head2{
+    display: inline;
+    float: right;
+    color: white;
+
+}
+a{
+    color: aliceblue;
+}
+.head3{
+    color: aliceblue;
+}
