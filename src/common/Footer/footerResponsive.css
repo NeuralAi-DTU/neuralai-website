@@ -1,0 +1,55 @@
+.introNeuralAI {
+    font-size: calc(30px + (30 - 10)*((100vw - 300px)/(1600 - 300)));
+    line-height: calc(36px + (30 - 10)*((100vw - 300px)/(1600 - 300)));
+}
+
+.links {
+    color: #d7d7d7;
+    text-align: center;
+    font-size: calc(10px + (40 - 20)*((100vw - 300px)/(1600 - 300)));
+}
+
+.links:hover {
+    color: #00b7eb;
+    text-decoration: none;
+}
+
+.mail {
+    color: #d7d7d7;
+    font-size: calc(10px + (40 - 20)*((100vw - 300px)/(1600 - 300)));
+    padding-top: 0;
+}
+
+.logo {
+    width: 60%;
+    padding: calc(7px + (17 - 7)*((100vw - 300px)/(1600 - 300)));
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    .logo{
+        padding-left: 0;
+    }
+    .containerLogo{
+        padding-left: 0;
+    }
+    .mail{
+        font-size: calc(13px + (40 - 20)*((100vw - 300px)/(1600 - 300)));
+        padding-right: 0;
+    }
+    .containers{
+        padding-right: 10;
+    }
+    .introNeuralAI {
+        font-size: calc(20px + (30 - 10)*((100vw - 300px)/(1600 - 300)));
+        line-height: calc(26px + (30 - 10)*((100vw - 300px)/(1600 - 300)));
+    }
+}
+
+.containers {
+    padding: calc(5px + (20 - 5)*((100vw - 300px)/(1600 - 300)));
+}
+
+.containerLogo {
+    padding: calc(5px + (20 - 5)*((100vw - 300px)/(1600 - 300)));
+}
