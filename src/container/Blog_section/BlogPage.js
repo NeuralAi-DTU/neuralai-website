@@ -6,7 +6,7 @@ import classes from "./BlogPage.module.css";
 function BlogPage(props) {
   return (
     <div className={classes.blogPage}>
-      <Heading title="BLOGS" subTitle="blogs" color="#E95D76" />
+      <Heading title="BLOGS" subTitle="Blogs" color="#E95D76" />
       <Blog_section />
     </div>
   );

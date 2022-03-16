@@ -1,5 +1,6 @@
 import React from "react";
 import BlogPage from "./container/Blog_section/BlogPage";
+import DevProjectPage from "./container/DevelopmentProjects/DevProjectPage";
 import Landing from "./container/Landing/Landing";
 import Card1 from "./container/Research_Papers/card";
 import Footer from './common/Footer/Footer';
@@ -26,6 +27,7 @@ export default function App() {
   return (
     <>
       <Landing />
+      <DevProjectPage />
       <BlogPage />
       <Card1 />
       <ThemeProvider theme={theme}>
